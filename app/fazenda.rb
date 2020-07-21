@@ -245,7 +245,7 @@ module Scrapers
 
             }
 
-            client = TwoCaptcha.new('39f154fa6e5fc21fc620ddb4c9c2ee79' , client_options)
+            client = TwoCaptcha.new(ENV["CAPTCHA_KEY"] , client_options)
 
             options_captcha = {googlekey: "6Led7bcUAAAAAGqEoogy4d-S1jNlkuxheM7z2QWt" ,
             pageurl: "https://www.ipva.fazenda.sp.gov.br/IPVANET_Consulta/Consulta.aspx"}

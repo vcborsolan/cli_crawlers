@@ -35,7 +35,7 @@ module Scrapers
 
             }
 
-            client = TwoCaptcha.new('39f154fa6e5fc21fc620ddb4c9c2ee79' , client_options)
+            client = TwoCaptcha.new(ENV["CAPTCHA_KEY"] , client_options)
 
             options_captcha = {googlekey: "6LeeDDoUAAAAAL7awoPJgSMuiF6AuJW5rf0zqEfy" ,
             pageurl: "https://www.dividaativa.pge.sp.gov.br/da-ic-web/erroSessao.do"}
